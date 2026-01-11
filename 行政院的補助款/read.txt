@@ -1,0 +1,48 @@
+行政院發放各縣市補助款(單位為萬)。 請統計各縣市各得多少補助款，然後依照縣市名稱排序而印出各縣市各得到多少補助款。輸入的城市不會超過15個。
+
+Example 1:
+
+```
+TaichungCity  5000
+TaipeiCity  300
+KaohsiungCity  310
+TainanCounty   2000
+TaichungCity  50
+TaipeiCity       4500
+KaohsiungCity   5000
+END
+
+```
+
+每行輸入最後面無space但有line-return
+
+output:
+
+```
+KaohsiungCity 5310
+TaichungCity 5050
+TainanCounty 2000
+TaipeiCity 4800
+```
+
+### 输入：
+
+```sql
+
+Shanghai 300
+Beijing 200
+Shanghai 400
+Guangzhou 150
+END
+
+```
+
+**输出**：
+
+```
+
+Beijing 200
+Guangzhou 150
+Shanghai 700
+
+```

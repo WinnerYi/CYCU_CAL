@@ -1,0 +1,9 @@
+Input是一票整數，以9999結尾，請在這些整數中找出三項數據(最大、最小、數量)並印出之：
+
+<maximum>
+
+<minimum>
+
+<number of integers>
+
+如果一開始就是9999，則<maximum>與<minimum>就都是印`NA`字樣。意即，9999不影響這三個數據的計算。

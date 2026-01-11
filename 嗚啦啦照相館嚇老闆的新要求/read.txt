@@ -1,0 +1,91 @@
+程式的要求依舊是：只要輸入一個名字跟兩個非負整數(代表開始數字跟結尾數字)、這個程式就能產生所有資料夾的名稱。(就是在名字後面加入該範圍內的整數。)
+
+這次輸入會是"正常且完整"的名字，如"Bill Gates", "Elizabeth Rosemond Taylor", "馬英九總統", "尊敬的夏延德老大", "George W. Bush", "國父 孫中山先生"等，名字可能會很長(或很多)，但名字的區域不會包含數字。亦即，你不會遇到`he11o`，`5uperman`這樣的奇怪名字。(這表示，如果檢查輸入檢查到一個「數字字串」的話...?)
+
+另外，輸入完名字後必然會輸入兩個數字。每一個名字(壓縮前)單獨不會超過30字元。每一個名字的輸入的字串數不會超過`5`個。
+
+假設輸入是"David Wang 1 3"，則輸出應該是
+
+```
+DavidWang1
+DavidWang2
+DavidWang3
+
+```
+
+假設輸入是"John Wayne 17 17"，則輸出應該是
+
+```
+JohnWayne17
+
+```
+
+請注意：最後兩個輸入必須是非負整數，而且第二個不得小於第一個。違反此規矩，則印出"Input format error : xxx"，其中xxx是第一個違反規矩的內容。(前幾個輸入保證不會是整數，最後兩個輸入則保證是整數)
+
+也請注意Linux的一個特性(因為CAL是跑在Linux上)：如果已無input而你的程式還繼續read，它會給你奇怪的input(可能是最後一個的那個)，而不會有run-time error。
+
+Example 1 :
+
+input
+
+```
+               John
+Wayne      17
+
+              17
+
+```
+
+以上各行之後無space，但有line-return
+
+output
+
+```
+JohnWayne17
+
+```
+
+以上各行之後無space，但有line-return
+
+Example 2 : (中文只是舉例，測資沒有中文)
+
+input
+
+```
+               國父 孫中山先生 0
+
+              2
+
+```
+
+以上各行之後無space，但有line-return
+
+output
+
+```
+國父孫中山先生0
+國父孫中山先生1
+國父孫中山先生2
+
+```
+
+以上各行之後無space，但有line-return
+
+Example 3 :
+
+input
+
+```
+               國父 孫中山先生 0
+
+              -2
+
+```
+
+以上各行之後無space，但有line-return
+
+output
+
+```
+Input format error : -2
+```

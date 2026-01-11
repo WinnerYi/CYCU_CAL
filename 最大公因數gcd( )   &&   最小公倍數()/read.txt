@@ -1,0 +1,8 @@
+Input : two positive integers
+
+Output : the 最大公因數 (Greatest Common Divisor) of these two integers
+
+最大公因數的典型計算法是輾轉相除法
+
+最小公倍數的計算公式是：
+lcm (a,b)= a∗b / gcd (a,b)
